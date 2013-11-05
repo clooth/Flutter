@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class AEAudioController;
+
 @interface ViewController : UIViewController
+
+- (id)initWithAudioController:(AEAudioController *)audioController;
 
 @end

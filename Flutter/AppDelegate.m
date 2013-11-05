@@ -7,12 +7,30 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "TheAmazingAudioEngine.h"
 
 @implementation AppDelegate
 
+@synthesize window = _window;
+@synthesize viewController = _viewController;
+@synthesize audioController = _audioController;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds] autorelease];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    // Create audio controller
+    self.audioController = [[[AEAudioController alloc] initWithAudioDescription:[AEAudioController nonInterleaved16BitStereoAudioDescription] inputEnabled:YES] autorelease];
+    _audioController.preferredBufferDuration = 0.005;
+    [_audioController start:NULL];
+
+    // Create and display controller
+    self.viewController = [[ViewController alloc] initWithAudioController:_audioController];
+    self.window.rootViewController = self.viewController;
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 							
@@ -41,6 +59,13 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)dealloc
+{
+    [_window release];
+    [_viewController release];
+    [super dealloc];
 }
 
 @end

@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class AEAudioController;
+@class ViewController;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+@property (retain, nonatomic) UIWindow *window;
+@property (retain, nonatomic) ViewController *viewController;
+@property (retain, nonatomic) AEAudioController *audioController;
 
 @end

@@ -13,7 +13,6 @@
 		031BD53C181EFC00006E4756 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 031BD53A181EFC00006E4756 /* InfoPlist.strings */; };
 		031BD53E181EFC00006E4756 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 031BD53D181EFC00006E4756 /* main.m */; };
 		031BD542181EFC00006E4756 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 031BD541181EFC00006E4756 /* AppDelegate.m */; };
-		031BD545181EFC00006E4756 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 031BD543181EFC00006E4756 /* Main.storyboard */; };
 		031BD548181EFC00006E4756 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 031BD547181EFC00006E4756 /* ViewController.m */; };
 		031BD54A181EFC00006E4756 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 031BD549181EFC00006E4756 /* Images.xcassets */; };
 		031BD551181EFC00006E4756 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031BD550181EFC00006E4756 /* XCTest.framework */; };
@@ -21,6 +20,11 @@
 		031BD553181EFC00006E4756 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031BD535181EFC00006E4756 /* UIKit.framework */; };
 		031BD55B181EFC00006E4756 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 031BD559181EFC00006E4756 /* InfoPlist.strings */; };
 		031BD55D181EFC00006E4756 /* FlutterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 031BD55C181EFC00006E4756 /* FlutterTests.m */; };
+		031BD572181EFC92006E4756 /* libTheAmazingAudioEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 031BD571181EFC88006E4756 /* libTheAmazingAudioEngine.a */; };
+		031BD574181EFC98006E4756 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031BD573181EFC98006E4756 /* AudioToolbox.framework */; };
+		031BD576181EFC9B006E4756 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031BD575181EFC9B006E4756 /* Accelerate.framework */; };
+		031BD579181EFCFC006E4756 /* FlutterLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 031BD578181EFCFC006E4756 /* FlutterLayer.m */; };
+		031BD57A181EFCFC006E4756 /* FlutterLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 031BD578181EFCFC006E4756 /* FlutterLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +34,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 031BD52D181EFC00006E4756;
 			remoteInfo = Flutter;
+		};
+		031BD570181EFC88006E4756 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 031BD56C181EFC87006E4756 /* TheAmazingAudioEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C215CEC1523A7D500D36CAD;
+			remoteInfo = TheAmazingAudioEngine;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -44,7 +55,6 @@
 		031BD53F181EFC00006E4756 /* Flutter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Flutter-Prefix.pch"; sourceTree = "<group>"; };
 		031BD540181EFC00006E4756 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		031BD541181EFC00006E4756 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		031BD544181EFC00006E4756 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		031BD546181EFC00006E4756 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		031BD547181EFC00006E4756 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		031BD549181EFC00006E4756 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,6 +63,11 @@
 		031BD558181EFC00006E4756 /* FlutterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlutterTests-Info.plist"; sourceTree = "<group>"; };
 		031BD55A181EFC00006E4756 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		031BD55C181EFC00006E4756 /* FlutterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlutterTests.m; sourceTree = "<group>"; };
+		031BD56C181EFC87006E4756 /* TheAmazingAudioEngine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TheAmazingAudioEngine.xcodeproj; path = ../TheAmazingAudioEngine/TheAmazingAudioEngine.xcodeproj; sourceTree = "<group>"; };
+		031BD573181EFC98006E4756 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		031BD575181EFC9B006E4756 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		031BD577181EFCFC006E4756 /* FlutterLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlutterLayer.h; sourceTree = "<group>"; };
+		031BD578181EFCFC006E4756 /* FlutterLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlutterLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +75,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				031BD576181EFC9B006E4756 /* Accelerate.framework in Frameworks */,
+				031BD574181EFC98006E4756 /* AudioToolbox.framework in Frameworks */,
+				031BD572181EFC92006E4756 /* libTheAmazingAudioEngine.a in Frameworks */,
 				031BD534181EFC00006E4756 /* CoreGraphics.framework in Frameworks */,
 				031BD536181EFC00006E4756 /* UIKit.framework in Frameworks */,
 				031BD532181EFC00006E4756 /* Foundation.framework in Frameworks */,
@@ -82,6 +100,7 @@
 		031BD525181EFC00006E4756 = {
 			isa = PBXGroup;
 			children = (
+				031BD56C181EFC87006E4756 /* TheAmazingAudioEngine.xcodeproj */,
 				031BD537181EFC00006E4756 /* Flutter */,
 				031BD556181EFC00006E4756 /* FlutterTests */,
 				031BD530181EFC00006E4756 /* Frameworks */,
@@ -101,6 +120,8 @@
 		031BD530181EFC00006E4756 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				031BD575181EFC9B006E4756 /* Accelerate.framework */,
+				031BD573181EFC98006E4756 /* AudioToolbox.framework */,
 				031BD531181EFC00006E4756 /* Foundation.framework */,
 				031BD533181EFC00006E4756 /* CoreGraphics.framework */,
 				031BD535181EFC00006E4756 /* UIKit.framework */,
@@ -112,9 +133,9 @@
 		031BD537181EFC00006E4756 /* Flutter */ = {
 			isa = PBXGroup;
 			children = (
+				034354FE181EFD7300D48558 /* Visualization */,
 				031BD540181EFC00006E4756 /* AppDelegate.h */,
 				031BD541181EFC00006E4756 /* AppDelegate.m */,
-				031BD543181EFC00006E4756 /* Main.storyboard */,
 				031BD546181EFC00006E4756 /* ViewController.h */,
 				031BD547181EFC00006E4756 /* ViewController.m */,
 				031BD549181EFC00006E4756 /* Images.xcassets */,
@@ -150,6 +171,23 @@
 				031BD559181EFC00006E4756 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		031BD56D181EFC87006E4756 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				031BD571181EFC88006E4756 /* libTheAmazingAudioEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		034354FE181EFD7300D48558 /* Visualization */ = {
+			isa = PBXGroup;
+			children = (
+				031BD577181EFCFC006E4756 /* FlutterLayer.h */,
+				031BD578181EFCFC006E4756 /* FlutterLayer.m */,
+			);
+			name = Visualization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +253,12 @@
 			mainGroup = 031BD525181EFC00006E4756;
 			productRefGroup = 031BD52F181EFC00006E4756 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 031BD56D181EFC87006E4756 /* Products */;
+					ProjectRef = 031BD56C181EFC87006E4756 /* TheAmazingAudioEngine.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				031BD52D181EFC00006E4756 /* Flutter */,
@@ -223,6 +267,16 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		031BD571181EFC88006E4756 /* libTheAmazingAudioEngine.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTheAmazingAudioEngine.a;
+			remoteRef = 031BD570181EFC88006E4756 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		031BD52C181EFC00006E4756 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -230,7 +284,6 @@
 			files = (
 				031BD54A181EFC00006E4756 /* Images.xcassets in Resources */,
 				031BD53C181EFC00006E4756 /* InfoPlist.strings in Resources */,
-				031BD545181EFC00006E4756 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				031BD579181EFCFC006E4756 /* FlutterLayer.m in Sources */,
 				031BD548181EFC00006E4756 /* ViewController.m in Sources */,
 				031BD542181EFC00006E4756 /* AppDelegate.m in Sources */,
 				031BD53E181EFC00006E4756 /* main.m in Sources */,
@@ -259,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				031BD57A181EFCFC006E4756 /* FlutterLayer.m in Sources */,
 				031BD55D181EFC00006E4756 /* FlutterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,14 +335,6 @@
 				031BD53B181EFC00006E4756 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		031BD543181EFC00006E4756 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				031BD544181EFC00006E4756 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		031BD559181EFC00006E4756 /* InfoPlist.strings */ = {
@@ -378,8 +425,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Flutter/Flutter-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(TAAE_SRC)/**",
+				);
 				INFOPLIST_FILE = "Flutter/Flutter-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -391,8 +444,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Flutter/Flutter-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(TAAE_SRC)/**",
+				);
 				INFOPLIST_FILE = "Flutter/Flutter-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -460,6 +519,7 @@
 				031BD562181EFC00006E4756 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		031BD563181EFC00006E4756 /* Build configuration list for PBXNativeTarget "FlutterTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +528,7 @@
 				031BD565181EFC00006E4756 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
